@@ -1,0 +1,35 @@
+PS C:\Users\ringo> cd onedrive     
+PS C:\Users\ringo\OneDrive> cd "デスクトップ"
+PS C:\Users\ringo\OneDrive\デスクトップ> cd "侍エンジニア"
+PS C:\Users\ringo\OneDrive\デスクトップ\侍エンジニア> cd kadai_git     
+PS C:\Users\ringo\OneDrive\デスクトップ\侍エンジニア\kadai_git> mkdir git_challenge
+
+    Directory: C:\Users\ringo\OneDrive\デスクトップ\侍エンジニア\kadai_git
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          2024/04/09     9:40                git_challenge
+
+PS C:\Users\ringo\OneDrive\デスクトップ\侍エンジニア\kadai_git> cd git]
+Set-Location: Cannot find path 'git]' because it does not exist.
+PS C:\Users\ringo\OneDrive\デスクトップ\侍エンジニア\kadai_git> cd git_challenge
+PS C:\Users\ringo\OneDrive\デスクトップ\侍エンジニア\kadai_git\git_challenge> git init
+Initialized empty Git repository in C:/Users/ringo/OneDrive/デスクトップ/侍エンジニア/kadai_git/git_challenge/.git/
+PS C:\Users\ringo\OneDrive\デスクトップ\侍エンジニア\kadai_git\git_challenge> git add hello_world.txt
+PS C:\Users\ringo\OneDrive\デスクトップ\侍エンジニア\kadai_git\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) bbc055d] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\ringo\OneDrive\デスクトップ\侍エンジニア\kadai_git\git_challenge> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\ringo\OneDrive\デスクトップ\侍エンジニア\kadai_git\git_challenge> git add hello_world.txt
+PS C:\Users\ringo\OneDrive\デスクトップ\侍エンジニア\kadai_git\git_challenge> git commit -m "日本語訳を追記"       
+[main adcdc65] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\ringo\OneDrive\デスクトップ\侍エンジニア\kadai_git\git_challenge> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\ringo\OneDrive\デスクトップ\侍エンジニア\kadai_git\git_challenge> git log --oneline
+adcdc65 (HEAD -> main) 日本語訳を追記
+bbc055d hello_world.txtを追加
